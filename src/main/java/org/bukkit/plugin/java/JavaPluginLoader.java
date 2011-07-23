@@ -239,7 +239,7 @@ public final class JavaPluginLoader implements PluginLoader {
         // TODO: remove multiple Listener type and hence casts
 
         switch (type) {
-			}; 
+			
 			// Map Events
 
 		case MAP_INITIALIZE:
@@ -249,6 +249,8 @@ public final class JavaPluginLoader implements PluginLoader {
 							.onMapInitialize((MapInitializeEvent) event);
 				}
 			};
+			
+    
 		case MAP_INDEXCREATED:
 			return new EventExecutor() {
 				public void execute(Listener listener, Event event) {
